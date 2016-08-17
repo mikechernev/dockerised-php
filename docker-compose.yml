@@ -16,12 +16,6 @@ services:
             - ./code:/code
         networks:
             - code-network
-    db:
-        image: mysql:latest
-        environment:
-            MYSQL_ROOT_PASSWORD: pass
-        networks:
-            - code-network
 
 networks:
     code-network:
