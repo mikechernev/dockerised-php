@@ -14,6 +14,7 @@ services:
         image: php:fpm
         volumes:
             - ./code:/code
+            - ./log.conf:/usr/local/etc/php-fpm.d/zz-log.conf
         networks:
             - code-network
 
