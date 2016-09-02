@@ -8,5 +8,3 @@ The Docker setup for PHP applications using PHP7-FPM and Nginx described in http
 * Navigate to localhost:8080
 
 That's it! You have your local PHP setup using Docker
-
-PS Small adjustments to fit mysql
