@@ -1,0 +1,14 @@
+docs/
+.logs/
+.data/
+.www/
+.idea/
+*.swp
+.DS_Store
+*~
+.env
+.env.server
+backup
+deploy
+Archive.zip
+*_proxy_nginx.conf
