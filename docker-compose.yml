@@ -8,15 +8,7 @@ services:
         volumes:
             - ./code:/code
             - ./site.conf:/etc/nginx/conf.d/default.conf
-        networks:
-            - code-network
     php:
         image: php:fpm
         volumes:
             - ./code:/code
-        networks:
-            - code-network
-
-networks:
-    code-network:
-        driver: bridge
