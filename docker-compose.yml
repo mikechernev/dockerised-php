@@ -7,7 +7,7 @@ services:
       - "8080:8080"
     volumes:
       - ./src:/src
-      - ./site.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
   php:
     image: php:fpm-alpine
     volumes:
