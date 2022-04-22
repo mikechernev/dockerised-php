@@ -4,16 +4,16 @@ services:
     web:
         image: nginx:latest
         ports:
-            - "8080:80"
+          - "${NGINX_PORT}:80"
         volumes:
-            - ./code:/code
-            - ./site.conf:/etc/nginx/conf.d/default.conf
+            - ${APP_PATH}:/code
+            - ./nginx/site.conf:/etc/nginx/conf.d/default.conf
         networks:
             - code-network
     php:
         image: php:fpm
         volumes:
-            - ./code:/code
+            - ${APP_PATH}:/code
         networks:
             - code-network
 
